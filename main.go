@@ -3,22 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	/*
-	int
-	float32
-	bool
-string
-*/
-var x=10
-fmt.Println(x)
+	age	:= 20
 
-result := sum(10,20)
+	if age>18 {
+		fmt.Println("You are eligable to married")
 
-fmt.Println("final result is: ", result)
-}
-
-
-func sum(x int, y int ) int {
-	var sum = x + y;
-	return sum;
+	}else if age<18{
+		fmt.Println("You are not eligable to married")
+	}
 }
