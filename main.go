@@ -136,7 +136,7 @@ func main() {
 	}
 }
 */
-
+/*
 func add(a int, b int) int {
 	return a+b
 }
@@ -145,4 +145,15 @@ func main() {
 	result:=add(10,5)
 	fmt.Println("Result:",result)
 }
+*/
+
+func main() {
+	fruits:=[] string{"Apple","Banana","Cherry"}
+
+	for index,value:= range fruits {
+		fmt.Println("index:", index, "fruit:",value)
+	}
+}
+
+
 
