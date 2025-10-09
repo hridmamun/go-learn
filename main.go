@@ -129,11 +129,20 @@ func main() {
 	fmt.Println("Height:",height)
 }
 */
-
+/*
 func main() {
 	for i :=1; i<=5; i++ {
 		fmt.Println("Count:",i)
 	}
 }
+*/
 
+func add(a int, b int) int {
+	return a+b
+}
+
+func main() {
+	result:=add(10,5)
+	fmt.Println("Result:",result)
+}
 
