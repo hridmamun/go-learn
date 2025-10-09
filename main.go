@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-
+/*
 const a = 10
 var p = 100
 
@@ -25,4 +25,23 @@ func main() {
 func init() {
 	fmt.Println("Hello World")
 }
+*/
+
+type User struct {
+	Name string
+	Age int
+}
+
+func newUser(name string,age int) User {
+	return User {Name:name,Age:age}
+}
+
+func main() {
+	user:= newUser("Abdullah,25")
+	fmt.Println(user.Name,user.Age)
+}
+
+
+
+
 
