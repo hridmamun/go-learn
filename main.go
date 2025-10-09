@@ -43,7 +43,7 @@ func main() {
 }
 */
 
-
+/*
 func rectangleStats(length,width float64) (area, perimeter float64) {
 	area=length*width
 	perimeter=2*(length+width)
@@ -54,7 +54,16 @@ func main() {
 	a,p:= rectangleStats(10,5)
 	fmt.Println("Area:",a,"perimeter:",p)
 }
+*/
 
+
+func main() {
+	x:=10
+
+	if x>5 {
+		fmt.Println("x is greater than 5")
+	}
+}
 
 
 
