@@ -65,7 +65,7 @@ func main() {
 	}
 }
 */
-
+/*
 func main() {
 	age:=16
 
@@ -75,6 +75,23 @@ func main() {
 		fmt.Println("You are a minor")
 	}
 }
+*/
+
+func main() {
+	score:=75
+
+	if score>=90 {
+		fmt.Println("Grade A")
+	} else if score>=80 {
+		fmt.Println("Grade B")
+	} else if score >=70 {
+		fmt.Println("Grade C")
+	}else {
+		fmt.Println("Grade F")
+	}
+	}
+	
+	
 
 
 
