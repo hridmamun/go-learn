@@ -118,7 +118,7 @@ func main() {
 		}
 	
 */
-
+/*
 func main() {
 	var name string="Abdullah"
 	var age int=25
@@ -128,6 +128,12 @@ func main() {
 	fmt.Println("Age:",age)
 	fmt.Println("Height:",height)
 }
+*/
 
+func main() {
+	for i :=1; i<=5; i++ {
+		fmt.Println("Count:",i)
+	}
+}
 
 
