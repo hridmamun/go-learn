@@ -27,6 +27,7 @@ func init() {
 }
 */
 
+/*
 type User struct {
 	Name string
 	Age int
@@ -40,6 +41,20 @@ func main() {
 	user:= newUser("Abdullah,25")
 	fmt.Println(user.Name,user.Age)
 }
+*/
+
+
+func rectangleStats(length,width float64) (area, perimeter float64) {
+	area=length*width
+	perimeter=2*(length+width)
+	return
+}
+
+func main() {
+	a,p:= rectangleStats(10,5)
+	fmt.Println("Area:",a,"perimeter:",p)
+}
+
 
 
 
