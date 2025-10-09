@@ -56,7 +56,7 @@ func main() {
 }
 */
 
-
+/*
 func main() {
 	x:=10
 
@@ -64,7 +64,17 @@ func main() {
 		fmt.Println("x is greater than 5")
 	}
 }
+*/
 
+func main() {
+	age:=16
+
+	if age>=18 {
+		fmt.Println("You are an adult")
+	} else {
+		fmt.Println("You are a minor")
+	}
+}
 
 
 
