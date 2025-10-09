@@ -91,7 +91,7 @@ func main() {
 	}
 	}
 	*/
-
+/*
 	func main(){
 		if num:=8; num%2==0 {
 			fmt.Println(num,"is even")
@@ -99,6 +99,23 @@ func main() {
 			fmt.Println(num,"is odd")
 		}
 	}
+	*/
+
+	func main() {
+		age:=25
+		citizen:=true
+
+		if age >=18 {
+			if citizen {
+				fmt.Println("You are eligible to vote.")
+			} else {
+				fmt.Println("You are not a citizen.")
+			}
+			} else {
+				fmt.Println("You are too young to vote.")
+			
+			}
+		}
 	
 
 
