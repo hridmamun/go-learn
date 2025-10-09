@@ -100,7 +100,7 @@ func main() {
 		}
 	}
 	*/
-
+/*
 	func main() {
 		age:=25
 		citizen:=true
@@ -117,7 +117,17 @@ func main() {
 			}
 		}
 	
+*/
 
+func main() {
+	var name string="Abdullah"
+	var age int=25
+	height:=5.3
+
+	fmt.Println("Name:",name)
+	fmt.Println("Age:",age)
+	fmt.Println("Height:",height)
+}
 
 
 
