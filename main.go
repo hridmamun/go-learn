@@ -76,7 +76,7 @@ func main() {
 	}
 }
 */
-
+/*
 func main() {
 	score:=75
 
@@ -90,7 +90,15 @@ func main() {
 		fmt.Println("Grade F")
 	}
 	}
-	
+	*/
+
+	func main(){
+		if num:=8; num%2==0 {
+			fmt.Println(num,"is even")
+		} else {
+			fmt.Println(num,"is odd")
+		}
+	}
 	
 
 
