@@ -147,6 +147,7 @@ func main() {
 }
 */
 
+/*
 func main() {
 	fruits:=[] string{"Apple","Banana","Cherry"}
 
@@ -154,6 +155,16 @@ func main() {
 		fmt.Println("index:", index, "fruit:",value)
 	}
 }
+*/
 
+func main() {
+	var name string = "Abdullah"
+	var age int = 25
+	const country = "Bangladesh"
+
+	fmt.Println("Name:", name)
+	fmt.Println("Age:", age)
+	fmt.Println("Country", country)
+}
 
 
