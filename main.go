@@ -156,7 +156,7 @@ func main() {
 	}
 }
 */
-
+/*
 func main() {
 	var name string = "Abdullah"
 	var age int = 25
@@ -166,5 +166,19 @@ func main() {
 	fmt.Println("Age:", age)
 	fmt.Println("Country", country)
 }
+*/
+
+func main() {
+	number:=10
+
+	if number>0 {
+		fmt.Println(number,"is a positive number")
+	} else if number<0 {
+		fmt.Println(number,"is a negative number")
+	} else {
+		fmt.Println(number,"is zero")
+	}
+	}
+	
 
 
