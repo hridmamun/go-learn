@@ -181,7 +181,7 @@ func main() {
 	}
 	*/
 
-
+/*
 	func main() {
 		day:=3
 
@@ -196,5 +196,16 @@ func main() {
 			fmt.Println("Other day")
 		}
 	}
+*/
 
+
+func main() {
+	person := map [string] string {
+		"name": "Abdullah",
+		"city": "Jashore",
+	}
+
+	fmt.Println("Name:", person["name"])
+	fmt.Println("City:", person["city"])
+}
 
