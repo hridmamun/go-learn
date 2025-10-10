@@ -198,7 +198,7 @@ func main() {
 	}
 */
 
-
+/*
 func main() {
 	person := map [string] string {
 		"name": "Abdullah",
@@ -208,4 +208,16 @@ func main() {
 	fmt.Println("Name:", person["name"])
 	fmt.Println("City:", person["city"])
 }
+*/
 
+func divide(a,b int) (int,int) {
+	quotient:= a/b
+	reminder:= a % b
+	return quotient,reminder
+}
+
+func main() {
+	q,r := divide(10,3)
+	fmt.Println("Quotient:",q)
+	fmt.Println("Reminder:",r)
+}
