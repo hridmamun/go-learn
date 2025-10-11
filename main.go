@@ -209,7 +209,7 @@ func main() {
 	fmt.Println("City:", person["city"])
 }
 */
-
+/*
 func divide(a,b int) (int,int) {
 	quotient:= a/b
 	reminder:= a % b
@@ -220,4 +220,12 @@ func main() {
 	q,r := divide(10,3)
 	fmt.Println("Quotient:",q)
 	fmt.Println("Reminder:",r)
+}
+*/
+func main() {
+	var name string="Golang"
+	const version = "1.22"
+
+	fmt.Println("Language:", name)
+	fmt.Println("Version:", version)
 }
