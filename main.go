@@ -241,10 +241,27 @@ func main() {
 		greet()
 	}
 		*/
-
+/*
 		func sayHello(name string) {
 			fmt.Println(Hello, name)
 		}
 		func main() {
 			sayHello("Hridoy")
 		}
+			*/
+
+
+			func operate(a,b int, operation func(int,int) int) int {
+				return operation(a,b)
+			}
+
+			func main() {
+				add:= func(x,y int) int {
+					return x+y}
+					mul:= func(x,y int) int {
+						return x*y}
+						fmt.Println("Addition:", operation(5,6,add))
+						fmt.Println("Multiplication:", Operation(5,6,mul))
+					}
+				
+	
