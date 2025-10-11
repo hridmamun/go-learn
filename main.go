@@ -222,6 +222,7 @@ func main() {
 	fmt.Println("Reminder:",r)
 }
 */
+/*
 func main() {
 	var name string="Golang"
 	const version = "1.22"
@@ -229,3 +230,13 @@ func main() {
 	fmt.Println("Language:", name)
 	fmt.Println("Version:", version)
 }
+	*/
+
+
+	func greet() {
+		fmt.Println("Hello,from a function!")
+	}
+
+	func main() {
+		greet()
+	}
