@@ -232,7 +232,7 @@ func main() {
 }
 	*/
 
-
+/*
 	func greet() {
 		fmt.Println("Hello,from a function!")
 	}
@@ -240,3 +240,11 @@ func main() {
 	func main() {
 		greet()
 	}
+		*/
+
+		func sayHello(name string) {
+			fmt.Println(Hello, name)
+		}
+		func main() {
+			sayHello("Hridoy")
+		}
