@@ -256,12 +256,12 @@ func main() {
 			}
 
 			func main() {
-				add:= func(x,y int) int {
-					return x+y}
-					mul:= func(x,y int) int {
-						return x*y}
-						fmt.Println("Addition:", operation(5,6,add))
-						fmt.Println("Multiplication:", Operation(5,6,mul))
+				add:= func(x,y int) int {return x+y}
+					mul:= func(x,y int) int {return x*y}
+
+
+						fmt.Println("Addition:", operate(4,2,add))
+						fmt.Println("Multiplication:",operate(4,2,mul))
 					}
 				
 	
