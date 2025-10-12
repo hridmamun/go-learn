@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+
 /*
 func add(num1 int,num2 int) int {
 	sum:=num1+num2
@@ -295,7 +296,7 @@ func main() {
 	}
 		*/
 
-
+/*
 		func printWelcomeMessage() {
 			fmt.Println("Welcome to the application")
 		}
@@ -337,4 +338,22 @@ func main() {
 			display(name,sum)
 			printGoodbyeMessage()
 		}
+*/
+
+var (
+	a=20
+	b=30
+)
+func add(x int,y int) {
+	z:=x+y
+	fmt.Println(z)
+
+}
+func main () {
+	p:=30
+	q:=40
+	add(a,b)
+	add(p,q)
+	add(a,p)
+}
 
