@@ -339,7 +339,7 @@ func main() {
 			printGoodbyeMessage()
 		}
 */
-
+/*
 var (
 	a=20
 	b=30
@@ -356,4 +356,69 @@ func main () {
 	add(p,q)
 	add(a,p)
 }
+*/
 
+var totalStudents int
+
+
+type student struct {
+	ID int
+	Name string
+	Age int
+	Grades [] float64
+}
+
+func(s student) AverageGrade() float64 {
+	sum:=0.0
+	for _ , g:= range s.Grades {
+		sum+=g
+	}
+return sum /float64(len(s.Grades))
+}
+func NewStudent(id int,name string,age int,grades [] float64) student {
+	totalStudents++
+	return student{ID: id,Name: name,Age: age,Grades: grades}
+}
+
+func PrintStudents(students [] student) {
+	fmt.Println("== student List ==")
+	for _,s:= range students {
+		fmt.Println("ID:%d|Name:%s|Age:%d |Average:%.2f\n",s.ID,s.Name,s.Age,s.AverageGrade() )
+	}
+	fmt.Println("=======")
+}
+
+func FindStudent(students [] student, id int) *student {
+	for _ , s:= range students {
+		if s.ID==id {
+			return &students[i]
+		}
+	}
+	return nil
+}
+func main() {
+	students:= [] student{
+		Newstudent(1,"Alice",20,[] float64{90,85,88}),
+		Newstudent(2,"Bob",22,[] float64{75,80,72}),
+	Newstudent(3,"Charlie",19,[] float64{95,92,98}),
+}
+Printstudents(students)
+fmt.Println("\nSearching for student ID 2..")
+found:= FindStudent(students,2)
+if found != nil {
+	fmt.Printf("Found: %s,Average:%.2f\n", found.Name,found.AverageGrade())
+} else {
+	fmt.Println("student not found")
+}
+totalStudent:=100
+fmt.Println("\nLocal totalStudents:",totalStudents)
+fmt.Println("Global totalStudents:",getglobalTotal())
+
+newStudent:= NewStudent(4,"Daina",21,[] float64{82,79,85})
+students= append(students,newStudent)
+fmt.Println("\nAfter adding a new student:")
+PrintStudents(students)
+}
+func getGlobalTotal() int {
+	return totalStudents
+}
