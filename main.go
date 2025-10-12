@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func add(num1 int,num2 int) int {
+	sum:=num1+num2
+	return sum
+}
 /*
 const a = 10
 var p = 100
@@ -250,7 +254,7 @@ func main() {
 		}
 			*/
 
-
+/*
 			func operate(a,b int, operation func(int,int) int) int {
 				return operation(a,b)
 			}
@@ -263,5 +267,13 @@ func main() {
 						fmt.Println("Addition:", operate(4,2,add))
 						fmt.Println("Multiplication:",operate(4,2,mul))
 					}
-				
+				*/
+
+
+				func main() {
+					a:=10
+					b:=20
+					sum:=add(a,b)
+					fmt.Println("Sum:",sum)
+				}
 	
