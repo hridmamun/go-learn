@@ -423,7 +423,7 @@ func getGlobalTotal() int {
 	return totalStudents
 }
 */
-
+/*
 var (
 	a=10
 	b=20
@@ -440,3 +440,14 @@ func add(x int,y int) {
 func main() {
 	add(a,b)
 }
+	*/
+	var name = "Abdullah"
+	var age = 25
+
+	func main() {
+		greet()
+	}
+	func greet() {
+		fmt.Println("Hello,", name)
+		fmt.Println("Age:", age)
+	}
