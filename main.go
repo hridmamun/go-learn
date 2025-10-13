@@ -441,6 +441,7 @@ func main() {
 	add(a,b)
 }
 	*/
+	/*
 	var name = "Abdullah"
 	var age = 25
 
@@ -451,3 +452,12 @@ func main() {
 		fmt.Println("Hello,", name)
 		fmt.Println("Age:", age)
 	}
+		*/
+
+
+		const pi=3.1416
+
+		func main() {
+			area:= pi*5*5
+			fmt.Println("Area of circle:",area)
+		}
