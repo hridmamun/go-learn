@@ -454,10 +454,23 @@ func main() {
 	}
 		*/
 
-
+   /*
 		const pi=3.1416
 
 		func main() {
 			area:= pi*5*5
 			fmt.Println("Area of circle:",area)
 		}
+			*/
+
+
+			var a=10
+			func main() {
+				age:=30
+				if age>18 {
+					a:=47
+					fmt.Println(a)
+				}
+				fmt.Println(a)
+			}
+			
