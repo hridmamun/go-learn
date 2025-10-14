@@ -475,7 +475,7 @@ func main() {
 			}
 				*/
 
-				
+			/*	
 				func main() {
 
 					func(a int,b int) {
@@ -487,4 +487,16 @@ func main() {
 					func init() {
 						fmt.Println("I'll be call first")
 					}
-			
+			*/
+
+			func main() {
+				add:= func(a int,b int) {
+					c:=a+b
+					fmt.Println(c)
+				}
+				add(5,6)
+			}
+
+			func init() {
+				fmt.Println("I'll be call first")
+			}
