@@ -502,10 +502,23 @@ func main() {
 			}
 				*/
 
-
+/*
 				func main() {
 					multiply:= func(a int,b int) int {
 						return a*b
 					}
 					fmt.Println("product:",multiply(4,5))
+				}
+				*/
+
+				func operate(a int,b int, f func(int,int)int) int{
+					return f(a,b)
+				}
+
+				func main() {
+					sum:= func(x int,y int) int {return x+y}
+					diff:=func(x int,y int) int {return x-y}
+
+					fmt.Println("Sum:",operate(10,5,sum))
+					fmt.Println("Difference:",operate(10,5,diff))
 				}
