@@ -463,7 +463,7 @@ func main() {
 		}
 			*/
 
-
+/*
 			var a=10
 			func main() {
 				age:=30
@@ -473,4 +473,18 @@ func main() {
 				}
 				fmt.Println(a)
 			}
+				*/
+
+				
+				func main() {
+
+					func(a int,b int) {
+						c:=a+b
+						fmt.Println(c)
+				} (5,6)
+					}
+
+					func init() {
+						fmt.Println("I'll be call first")
+					}
 			
