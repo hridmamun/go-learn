@@ -488,7 +488,7 @@ func main() {
 						fmt.Println("I'll be call first")
 					}
 			*/
-
+/*
 			func main() {
 				add:= func(a int,b int) {
 					c:=a+b
@@ -500,3 +500,12 @@ func main() {
 			func init() {
 				fmt.Println("I'll be call first")
 			}
+				*/
+
+
+				func main() {
+					multiply:= func(a int,b int) int {
+						return a*b
+					}
+					fmt.Println("product:",multiply(4,5))
+				}
