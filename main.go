@@ -510,7 +510,7 @@ func main() {
 					fmt.Println("product:",multiply(4,5))
 				}
 				*/
-
+/*
 				func operate(a int,b int, f func(int,int)int) int{
 					return f(a,b)
 				}
@@ -522,3 +522,22 @@ func main() {
 					fmt.Println("Sum:",operate(10,5,sum))
 					fmt.Println("Difference:",operate(10,5,diff))
 				}
+					*/
+
+		
+					
+					func add(a int,b int) {
+						c:=a+b
+						fmt.Println(c)
+					}
+					func main() {
+						add(2,5)
+						sum:=call()
+						sum(4,7)
+					}
+					func processOperation(a int,b int,op func(p int,q int)) {
+						op(a,b)
+					}
+					func call() func(x int,y int) {
+						return add
+					}
