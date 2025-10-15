@@ -525,7 +525,7 @@ func main() {
 					*/
 
 		
-					
+					/*
 					func add(a int,b int) {
 						c:=a+b
 						fmt.Println(c)
@@ -541,3 +541,20 @@ func main() {
 					func call() func(x int,y int) {
 						return add
 					}
+						*/
+
+
+						var a = 10
+						func add(x int,y int) {
+							z:=x+y
+							fmt.Println(z)
+						}
+
+						func main() {
+							add(5,4)
+							add(a,3)
+						}
+
+						func init() {
+							fmt.Println("Hello")
+						}
