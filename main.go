@@ -579,7 +579,7 @@ func main() {
 								fmt.Println("Hello")
 							}
 							*/
-
+/*
 							const a =10
 							var p = 100
 							func outer(money int) func() {
@@ -608,3 +608,26 @@ func main() {
 							func init() {
 								fmt.Println("===Bank===")
 							}
+								*/
+
+
+								type User struct {
+									Name string
+									Age int
+								}
+								func (usr User) printDetails() {
+									fmt.Println("Name:",usr.Name)
+									fmt.Println("Age:",usr.Age)
+								}
+								func main() {
+									user1:= User{
+										Name: "Tuhin",
+										Age: 30,
+									}
+									user2:=User {
+										Name: "Hridoy",
+										Age: 25,
+									}
+									user1.printDetails()
+									user2.printDetails()
+								}
