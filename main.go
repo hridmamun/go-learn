@@ -660,7 +660,7 @@ func main() {
 										
 									}
 											*/
-
+/*
 						type Address struct {
 							City,Country string
 						}
@@ -682,3 +682,17 @@ func main() {
 							fmt.Println(e)
 							fmt.Println("Employee City:",e.Address.City)
 						}
+*/
+
+func main() {
+	user:= struct {
+		ID int
+		Name string
+		Role string
+	}{
+		ID: 1,
+		Name: "Abdullah",
+		Role: "Admin",
+	}
+	fmt.Println(user)
+}
