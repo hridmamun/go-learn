@@ -683,7 +683,7 @@ func main() {
 							fmt.Println("Employee City:",e.Address.City)
 						}
 */
-
+/*
 func main() {
 	user:= struct {
 		ID int
@@ -696,3 +696,19 @@ func main() {
 	}
 	fmt.Println(user)
 }
+	*/
+
+	type Student struct {
+		Name string
+		Marks  int
+	}
+	func main() {
+		students:= [] Student{
+			{"Rafi",85},
+			{"Tuhin", 90},
+			{"Hridoy",78},
+		}
+		for _,s:=range students {
+			fmt.Println("%s scored %d\n",s.Name,s.Marks)
+		}
+	}
