@@ -610,7 +610,7 @@ func main() {
 							}
 								*/
 
-
+/*
 								type User struct {
 									Name string
 									Age int
@@ -631,3 +631,17 @@ func main() {
 									user1.printDetails()
 									user2.printDetails()
 								}
+									*/
+
+									type Rectangle struct {
+										Width float64
+										Height float64
+									}
+
+									func (r Rectangle) Area() float64 {
+										return r.Width * r.Height
+									}
+									func main() {
+										rect:=Rectangle{Width:10,Height:5}
+										fmt.Println("Area:",rect.Area())
+									}
