@@ -632,7 +632,7 @@ func main() {
 									user2.printDetails()
 								}
 									*/
-
+                                /*
 									type Rectangle struct {
 										Width float64
 										Height float64
@@ -644,4 +644,18 @@ func main() {
 									func main() {
 										rect:=Rectangle{Width:10,Height:5}
 										fmt.Println("Area:",rect.Area())
+									}*/
+
+									type Counter struct {
+										count int
+									}
+									func (c* Counter) Increment() {
+										c.count++
+									}
+									func main() {
+										c:= &Counter{}
+											c.Increment()
+											c.Increment()
+											fmt.Println("Count:",c.count)
+										
 									}
