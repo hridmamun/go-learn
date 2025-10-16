@@ -697,7 +697,7 @@ func main() {
 	fmt.Println(user)
 }
 	*/
-
+/*
 	type Student struct {
 		Name string
 		Marks  int
@@ -712,3 +712,21 @@ func main() {
 			fmt.Println("%s scored %d\n",s.Name,s.Marks)
 		}
 	}
+		*/
+
+		type Animal struct {
+			Name string
+		}
+		func (a Animal) Speak() {
+			fmt.Println(a.Name,"makes a sound")
+
+		}
+		type Dog struct {
+			Animal
+			Breed string
+		}
+		func main() {
+			d:= Dog{Animal{"Buddy"},"Labrador"}
+			d.Speak()
+			fmt.Println("Dog Breed:",d.Breed)
+		}
