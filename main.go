@@ -645,7 +645,7 @@ func main() {
 										rect:=Rectangle{Width:10,Height:5}
 										fmt.Println("Area:",rect.Area())
 									}*/
-
+                                   /*
 									type Counter struct {
 										count int
 									}
@@ -659,3 +659,26 @@ func main() {
 											fmt.Println("Count:",c.count)
 										
 									}
+											*/
+
+						type Address struct {
+							City,Country string
+						}
+						type Employee struct {
+							Name string
+							Age int
+							Address Address
+						}
+						func main() {
+							e:= Employee{
+								Name: "Abdullah",
+								Age: 25,
+								Address: Address {
+									City: "Jashore",
+									Country: "Bangladesh",
+								},
+			
+							}
+							fmt.Println(e)
+							fmt.Println("Employee City:",e.Address.City)
+						}
