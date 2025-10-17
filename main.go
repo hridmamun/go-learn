@@ -731,7 +731,7 @@ func main() {
 			fmt.Println("Dog Breed:",d.Breed)
 		}
 			*/
-
+/*
 			func main() {
 				var numbers[5] int
 				numbers[0]=10
@@ -741,3 +741,9 @@ func main() {
 				numbers[4]=50
 				fmt.Println("Numbers:",numbers)
 			}
+				*/
+
+				func main() {
+					names:= [3] string{"Abdullah","Tuhin","Hridoy"}
+					fmt.Println("Names:",names)
+				}
