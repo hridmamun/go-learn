@@ -756,10 +756,21 @@ func main() {
 					}
 				}
 					*/
-
+/*
 					func main() {
 						fruits:= [3] string{"Apple","Banana","Cherry"}
 						for index, value:= range fruits {
 							fmt.Println("Index:",index,"Fruits:",value)
 						}
 					}
+						*/
+
+						func main() {
+							temperatures:= [4] float64{32.5,33.5,29.8,30.0}
+							var sum float64
+							for _,value:= range temperatures {
+								sum+=value
+							}
+							average := sum/ float64(len(temperatures))
+							fmt.Println("Average Temperature:",average)
+						}
