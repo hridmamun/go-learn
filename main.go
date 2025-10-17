@@ -713,7 +713,7 @@ func main() {
 		}
 	}
 		*/
-
+/*
 		type Animal struct {
 			Name string
 		}
@@ -730,3 +730,14 @@ func main() {
 			d.Speak()
 			fmt.Println("Dog Breed:",d.Breed)
 		}
+			*/
+
+			func main() {
+				var numbers[5] int
+				numbers[0]=10
+				numbers[1]=20
+				numbers[2]=30
+				numbers[3]=40
+				numbers[4]=50
+				fmt.Println("Numbers:",numbers)
+			}
