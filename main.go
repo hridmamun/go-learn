@@ -764,7 +764,7 @@ func main() {
 						}
 					}
 						*/
-
+/*
 						func main() {
 							temperatures:= [4] float64{32.5,33.5,29.8,30.0}
 							var sum float64
@@ -774,3 +774,12 @@ func main() {
 							average := sum/ float64(len(temperatures))
 							fmt.Println("Average Temperature:",average)
 						}
+							*/
+
+							func main() {
+								a := [3] int{10,20,30}
+								b := [3] int{10,20,30}
+								c := [3] int{5,15,25}
+								fmt.Println("a==b:",a==b)
+								fmt.Println("a==c:",a==c)
+							}
