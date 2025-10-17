@@ -742,8 +742,16 @@ func main() {
 				fmt.Println("Numbers:",numbers)
 			}
 				*/
-
+/*
 				func main() {
 					names:= [3] string{"Abdullah","Tuhin","Hridoy"}
 					fmt.Println("Names:",names)
+				}*/
+
+
+				func main() {
+					arr:=[5] int{2,4,6,9,8}
+					for i:=0; i<len(arr) ;i++ {
+						fmt.Println("Element at index %d=%d\n",i,arr[i])
+					}
 				}
