@@ -775,7 +775,7 @@ func main() {
 							fmt.Println("Average Temperature:",average)
 						}
 							*/
-
+/*
 							func main() {
 								a := [3] int{10,20,30}
 								b := [3] int{10,20,30}
@@ -783,3 +783,14 @@ func main() {
 								fmt.Println("a==b:",a==b)
 								fmt.Println("a==c:",a==c)
 							}
+								*/
+
+								func main() {
+									var nums [3] int
+									nums[0]=10
+									nums[1]=20
+									nums[2]=30
+									fmt.Println("Array:",nums)
+									fmt.Println("First element:",nums[0])
+									fmt.Println("Lenght:",len(nums))
+								}
