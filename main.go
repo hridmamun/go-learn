@@ -803,7 +803,7 @@ func main() {
 										fmt.Println(letters)
 									}
 										*/
-
+/*
 										func main() {
 											arr:= [3] string{"Go","Rust","Python"}
 											for i:=0; i< len(arr) ;i++ {
@@ -813,4 +813,13 @@ func main() {
 											for index,value:= range arr {
 												fmt.Println(index,value)
 											}								
+											}
+											*/
+											func main() {
+												var matrix [2] [3] int = [2] [3] int {
+													{1,2,3},
+													{4,5,6},
+												}
+												fmt.Println("Matrix:",matrix)
+												fmt.Println("Element at (1,2):",matrix [1] [2]) 
 											}
