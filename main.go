@@ -795,10 +795,22 @@ func main() {
 									fmt.Println("Lenght:",len(nums))
 								}
 									*/
-
+/*
 									func main() {
 										nums:= [4] int{1,2,3,4}
 										fmt.Println(nums)
 										letters:= [...] string {"a","b","c"}
 										fmt.Println(letters)
 									}
+										*/
+
+										func main() {
+											arr:= [3] string{"Go","Rust","Python"}
+											for i:=0; i< len(arr) ;i++ {
+												fmt.Println(i,arr[i])
+											}	
+											fmt.Println("Using range:")
+											for index,value:= range arr {
+												fmt.Println(index,value)
+											}								
+											}
