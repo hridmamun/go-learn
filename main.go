@@ -784,7 +784,7 @@ func main() {
 								fmt.Println("a==c:",a==c)
 							}
 								*/
-
+/*
 								func main() {
 									var nums [3] int
 									nums[0]=10
@@ -794,3 +794,11 @@ func main() {
 									fmt.Println("First element:",nums[0])
 									fmt.Println("Lenght:",len(nums))
 								}
+									*/
+
+									func main() {
+										nums:= [4] int{1,2,3,4}
+										fmt.Println(nums)
+										letters:= [...] string {"a","b","c"}
+										fmt.Println(letters)
+									}
