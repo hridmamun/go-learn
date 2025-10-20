@@ -815,6 +815,7 @@ func main() {
 											}								
 											}
 											*/
+											/*
 											func main() {
 												var matrix [2] [3] int = [2] [3] int {
 													{1,2,3},
@@ -823,3 +824,22 @@ func main() {
 												fmt.Println("Matrix:",matrix)
 												fmt.Println("Element at (1,2):",matrix [1] [2]) 
 											}
+												*/
+
+												type Employee struct {
+													ID int
+													Name string
+													Department string
+													Salary float64
+												}
+												func main() {
+													employees:= [] Employee{
+														{ID:1,Name:"Alice",Department:"IT",Salary:75000.00},
+														{ID:2,Name:"Bob",Department:"Finance",Salary:65000.00},
+														{ID:3,Name:"Charlie",Department:"HR",Salary:60000.00},
+													}
+													fmt.Println("All Employees:")
+													for _,emp := range employees {
+														fmt.Printf("%d: %s works in %s,earns $%,2f\n",emp.ID,emp.Name,emp.Department,emp.Salary)
+													}
+												}
