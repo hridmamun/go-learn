@@ -865,7 +865,7 @@ func main() {
 													}
 														*/
 
-
+/*
 														type Student struct {
 															ID int
 															Name string
@@ -883,3 +883,25 @@ func main() {
 																fmt.Printf("%s's average score:% 2f\n",s.Name,avg)
 															}
 														}
+															*/
+
+
+															type Address struct {
+																city, country string
+															}
+															type Customer struct {
+																ID int
+																Name string
+																Email string
+																Address Address
+															}
+
+															func main() {
+																customers := [] Customer {
+																	{1,"Rafi","rafi@example.com",Address {"Dhaka","Bangladesh"}},
+																	{2,"Hridoy","hridoy@example.com",Address {"Tokyo","Japan"}},
+																}
+																for _,c:= range customers {
+																	fmt.Printf("%s(%s) lives in %s,%s\n",c.Name,c.Email,c.Address.city,c.Address. country)
+																}
+															}
