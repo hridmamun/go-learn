@@ -825,7 +825,7 @@ func main() {
 												fmt.Println("Element at (1,2):",matrix [1] [2]) 
 											}
 												*/
-
+/*
 												type Employee struct {
 													ID int
 													Name string
@@ -843,3 +843,23 @@ func main() {
 														fmt.Printf("%d: %s works in %s,earns $%,2f\n",emp.ID,emp.Name,emp.Department,emp.Salary)
 													}
 												}
+													*/
+
+													type product struct {
+														Code string
+														Name string
+														Quantity int
+														Price float64
+													}
+													func main() {
+														inventory := [] product {
+															{"P1001","Laptop",5,999.99},
+															{"P1002","Mouse",25,19.99},
+															{"P1003","Keyboard",10,49.99},
+														}
+														totalValue :=0.0
+														for _,item:= range inventory {
+															totalValue += float64 (item.Quantity)*item.Price
+														}
+														fmt.Printf("Total Inventory Value:$%,2f\n",totalValue)
+													}
