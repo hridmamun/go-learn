@@ -844,7 +844,7 @@ func main() {
 													}
 												}
 													*/
-
+/*
 													type product struct {
 														Code string
 														Name string
@@ -863,3 +863,23 @@ func main() {
 														}
 														fmt.Printf("Total Inventory Value:$%,2f\n",totalValue)
 													}
+														*/
+
+
+														type Student struct {
+															ID int
+															Name string
+															Scores [3] float64
+														}
+														func main() {
+															Students := [] Student {
+																{1,"Tuhin", [3] float64{80,90,85}},
+																{2,"Hridoy",[3] float64{88,92,95}},
+
+															}
+
+															for _, s:= range Students {
+																avg := (s.Scores[0]+s.Scores[1]+s.Scores[2]/3)
+																fmt.Printf("%s's average score:% 2f\n",s.Name,avg)
+															}
+														}
