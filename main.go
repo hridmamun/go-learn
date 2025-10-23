@@ -885,7 +885,7 @@ func main() {
 														}
 															*/
 
-
+/*
 															type Address struct {
 																city, country string
 															}
@@ -905,3 +905,38 @@ func main() {
 																	fmt.Printf("%s(%s) lives in %s,%s\n",c.Name,c.Email,c.Address.city,c.Address. country)
 																}
 															}
+																*/
+
+																type User struct {
+																	Name string
+																	Age int
+																	Salary float64
+																}
+																func print(numbers [3] int) {
+																	fmt.Println(numbers)
+																}
+																func print2(numbers* [3] int) {
+																	fmt.Println(numbers)
+																} 
+
+																func main() {
+																	x := 20
+																	p :=&x
+																	*p = 30
+
+																	fmt.Println(x)
+																	fmt.Println("Address:",p)
+																fmt.Println("Value:", *p)
+
+																arr := [3] int{1,2,3}
+																print( arr)
+																print2(&arr)
+
+																user1 := User {
+																	Name : "Hridoy",
+																	Age : 25,
+																	Salary : 0,
+																}
+																 p2 := &user1
+																fmt.Println(p2.Age)
+																}
