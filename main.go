@@ -954,7 +954,7 @@ func main() {
 																	fmt.Println("Updated x:",x)
 																}
 																	*/
-
+/*
 																	func updateValue(num *int) {
 																		*num = *num+5
 																	}
@@ -967,3 +967,19 @@ func main() {
 
 																		fmt.Println("After:",x)
 																	}
+																		*/
+
+																		type Person struct {
+																			Name  string
+																			Age int
+																		}
+
+																		func main() {
+																			p := Person{"Hridoy",25}
+																			ptr := &p
+
+
+																			fmt.Println("Name:",ptr.Name)
+																			ptr.Age = 30
+																			fmt.Println("Updated age:",p.Age)
+																		}
