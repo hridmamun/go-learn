@@ -985,7 +985,7 @@ func main() {
 																		}
 																			*/
 
-
+/*
 																			func main() {
 																				a := 5
 																				p := &a
@@ -996,6 +996,17 @@ func main() {
 																				fmt.Println("*p=",*p)
 																				fmt.Println("**pp=",**pp)
 																			}
+																				*/
+
+																				func main() {
+																					arr := [3] int {10,20,30}
+																					p := &arr[0]
+
+																					fmt.Println("First element:", *p)
+																					
+																					fmt.Println("Second element:",*p)
+																				
+																		}
 
 												
 																				
