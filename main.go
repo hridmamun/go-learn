@@ -941,7 +941,7 @@ func main() {
 																fmt.Println(p2.Age)
 																}
 																*/
-
+/*
 																func main() {
 																	var x int = 10
 																	var p *int = &x
@@ -953,3 +953,17 @@ func main() {
 																	*p = 20
 																	fmt.Println("Updated x:",x)
 																}
+																	*/
+
+																	func updateValue(num *int) {
+																		*num = *num+5
+																	}
+
+																	func main() {
+																		x:= 10
+																		fmt.Println("Before:",x)
+
+																		updateValue(&x)
+
+																		fmt.Println("After:",x)
+																	}
