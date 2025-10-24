@@ -906,7 +906,7 @@ func main() {
 																}
 															}
 																*/
-
+/*
 																type User struct {
 																	Name string
 																	Age int
@@ -939,4 +939,17 @@ func main() {
 																}
 																 p2 := &user1
 																fmt.Println(p2.Age)
+																}
+																*/
+
+																func main() {
+																	var x int = 10
+																	var p *int = &x
+
+																	fmt.Println("x:",x)
+																	fmt.Println("Address of x:",&x)
+																	fmt.Println("Pointer of p:",p)
+																	fmt.Println("value through pointer *p:",p)
+																	*p = 20
+																	fmt.Println("Updated x:",x)
 																}
