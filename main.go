@@ -968,7 +968,7 @@ func main() {
 																		fmt.Println("After:",x)
 																	}
 																		*/
-
+/*
 																		type Person struct {
 																			Name  string
 																			Age int
@@ -983,3 +983,20 @@ func main() {
 																			ptr.Age = 30
 																			fmt.Println("Updated age:",p.Age)
 																		}
+																			*/
+
+
+																			func main() {
+																				a := 5
+																				p := &a
+																				pp := &p
+
+
+																				fmt.Println("a=",a)
+																				fmt.Println("*p=",*p)
+																				fmt.Println("**pp=",**pp)
+																			}
+
+												
+																				
+											
