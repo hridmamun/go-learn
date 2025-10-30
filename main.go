@@ -1010,12 +1010,17 @@ func main() {
 
 
 																		func main() {
-																			age := 59
-																			if age >= 60 {
-																				fmt.Println("You can get old age allowance.")
-																			} else {
-																				fmt.Println("You can not get ")
+																			marks := 70
+																			if marks >= 60 {
+																				fmt.Println("You have got A-.")
+																			} else if marks <= 50 {
+																				fmt.Println("You have got D ")
+																			} else if marks >=70 {
+																			fmt.Println("You have got A")
+																			} else  {
+																				fmt.Println("You have failed")
 																			}
+
 																		}
 
 
