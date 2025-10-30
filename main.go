@@ -1008,7 +1008,7 @@ func main() {
 																				
 																		}*/
 
-
+/*
 																		func main() {
 																			marks := 70
 																			if marks >= 60 {
@@ -1022,6 +1022,23 @@ func main() {
 																			}
 
 																		}
+																			*/
+
+																			func main() {
+																				grade := "A"
+																				switch grade {
+																				case "A":
+																					fmt.Println("Excellent")
+																				case "B":
+																					fmt.Println("very good")
+																				case "C" :
+																				fmt.Println("Good")
+																			case "D":
+																			fmt.Println("Need more concious")
+																		default :
+																	fmt.Println("Failed")
+																	}
+													}
 
 
 												
