@@ -997,7 +997,7 @@ func main() {
 																				fmt.Println("**pp=",**pp)
 																			}
 																				*/
-
+/*
 																				func main() {
 																					arr := [3] int {10,20,30}
 																					p := &arr[0]
@@ -1006,7 +1006,18 @@ func main() {
 																					
 																					fmt.Println("Second element:",*p)
 																				
+																		}*/
+
+
+																		func main() {
+																			age := 59
+																			if age >= 60 {
+																				fmt.Println("You can get old age allowance.")
+																			} else {
+																				fmt.Println("You can not get ")
+																			}
 																		}
+
 
 												
 																				
