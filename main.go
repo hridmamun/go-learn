@@ -1023,7 +1023,7 @@ func main() {
 
 																		}
 																			*/
-
+/*
 																			func main() {
 																				grade := "A"
 																				switch grade {
@@ -1039,6 +1039,40 @@ func main() {
 																	fmt.Println("Failed")
 																	}
 													}
+																	*/
+
+/*
+																	func add(num1 int,num2 int) int {
+																		sum := num1+num2
+																		return sum
+																	}
+
+																	func main() {
+																		a := 15
+																		b := 25
+																		sum := add(a,b)
+																		fmt.Println(sum)
+																	}
+																		*/
+
+
+																		func add(num1 int,num2 int) int {
+																			sum := num1+num2
+																			return sum
+																		}
+																		func mult(num1 int,num2 int) int {
+																			mul := num1*num2
+																			return mul
+																		}
+
+																		func main() {
+																			a := 35
+																			b := 45
+																			sum := add(a,b)
+																			mul := mult(a,b)
+																			fmt.Println(sum)
+																			fmt.Println(mul)
+																		}
 
 
 												
