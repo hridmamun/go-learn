@@ -1130,7 +1130,7 @@ func main() {
 																						*/
 
 
-
+/*
 																						func main() {
 																							i :=100
 																							fmt.Println("before loop,i =:",i)
@@ -1141,6 +1141,16 @@ func main() {
 
 																							fmt.Println("after loop,i=:",i)
 																						}
+																							*/
+
+																							func main() {
+																								message := "Hello"
+																								if true {
+																									message :="Hi"
+																									fmt.Println(message)
+																								}
+																								fmt.Println(message)
+																							}
 
 
 																				
