@@ -1113,7 +1113,7 @@ func main() {
 																						fmt.Println(x)
 																					}*/
 
-
+/*
 																					func main() {
 																						num := 10
 																						fmt.Println("the outer num:",num)
@@ -1127,6 +1127,20 @@ func main() {
 																						double() 
 																						fmt.Println("after function,outer num:",num)
 																					}
+																						*/
+
+
+
+																						func main() {
+																							i :=100
+																							fmt.Println("before loop,i =:",i)
+
+																							for i :=0;i<3; i++ {
+																								fmt.Println("inner loop,i=:",i)
+																							}
+
+																							fmt.Println("after loop,i=:",i)
+																						}
 
 
 																				
