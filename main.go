@@ -1103,7 +1103,7 @@ func main() {
 																					*/
 
 
-
+/*
 																					func main() {
 																						x := 10
 																						if true {
@@ -1111,6 +1111,21 @@ func main() {
 																							fmt.Println(x)
 																						}
 																						fmt.Println(x)
+																					}*/
+
+
+																					func main() {
+																						num := 10
+																						fmt.Println("the outer num:",num)
+
+
+																						double := func() {
+																							n := num*2
+																							fmt.Println("the inner num:",n)
+																						}
+
+																						double() 
+																						fmt.Println("after function,outer num:",num)
 																					}
 
 
