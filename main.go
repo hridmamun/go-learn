@@ -1055,7 +1055,7 @@ func main() {
 																	}
 																		*/
 
-
+/*
 																		func add(num1 int,num2 int) int {
 																			sum := num1+num2
 																			return sum
@@ -1073,6 +1073,48 @@ func main() {
 																			fmt.Println(sum)
 																			fmt.Println(mul)
 																		}
+																			*/
+
+/*
+																			var x = 10
+																			func main() {
+																				y := 5
+																				fmt.Println(x)
+																				fmt.Println(y)
+																			}
+
+																			func test() {
+																				fmt.Println(x)
+																				fmt.Println(y)
+																			}
+																				*/
+
+/*
+																				var a = 10
+																				func main() {
+																					age :=30
+																					if age>18 {
+																						a := 47
+
+																						fmt.Println(a)
+																					}
+																					fmt.Println(a)
+																				}
+																					*/
+
+
+
+																					func main() {
+																						x := 10
+																						if true {
+																							x := 20
+																							fmt.Println(x)
+																						}
+																						fmt.Println(x)
+																					}
+
+
+																				
 
 
 												
