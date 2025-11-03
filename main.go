@@ -1153,7 +1153,7 @@ func main() {
 																							}
 																								*/
 
-
+/*
 																								type person struct {
 																									Name string
 																									Age int
@@ -1167,6 +1167,40 @@ func main() {
 
 																									birthday(&person)
 																									fmt.Println("After birthday:",person)
+																								}
+																									*/
+
+																									type Student struct {
+																										Name string
+																										Grade int
+																									}
+																									func promote(s *Student) {
+																										if s.Grade<12 {
+																											s.Grade++
+																										}
+																									}
+																									func changeName(s* Student,newName string) {
+
+												
+																									s.Name = newName
+																								}
+
+																								func printstudent(s *Student) {
+																									fmt.Printf("Name:%s,Grade:%d\n",s.Name,s.Grade)
+																								}
+																								func main() {
+																									s1 := Student{"Rahim",30}
+																									s2 := Student{"Mushfiq",32}
+
+																									printstudent(&s1)
+																									printstudent(&s2)
+																									promote(&s1)
+																									promote(&s2)
+																									changeName(&s1,"Abdullah")
+
+																									fmt.Println("\nAfter update:")
+																									printstudent(&s1)
+																									printstudent(&s2)
 																								}
 
 
