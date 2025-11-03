@@ -1142,7 +1142,7 @@ func main() {
 																							fmt.Println("after loop,i=:",i)
 																						}
 																							*/
-
+/*
 																							func main() {
 																								message := "Hello"
 																								if true {
@@ -1151,6 +1151,25 @@ func main() {
 																								}
 																								fmt.Println(message)
 																							}
+																								*/
+
+
+																								type person struct {
+																									Name string
+																									Age int
+																								}
+																								func birthday (p *person) {
+																								p.Age++
+																								}
+																								func main() {
+																									person := person{Name:"Alice",Age:25}
+																									fmt.Println("Before birhday:",person)
+
+																									birthday(&person)
+																									fmt.Println("After birthday:",person)
+																								}
+
+
 
 
 																				
