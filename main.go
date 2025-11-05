@@ -1233,7 +1233,7 @@ func main() {
 	}
 	fmt.Println(book)
 }*/
-
+/*
 type shape interface {
 	Area() float64
 }
@@ -1247,6 +1247,28 @@ func (r rectangle) Area () float64 {
 func main() {
 	var s shape = rectangle{10,5}
 	fmt.Println("Area:",s.Area())
+}*/
+
+type employee struct {
+	ID  int
+	Name string
+	Details map[string] string
+}
+
+func main() {
+	e := &employee {
+		ID : 101,
+		Name : "Hridoy",
+		Details: map[string] string {
+			"Position": "Developer",
+			"Country" : "Bangladesh",
+
+		},
+
+	}
+
+	fmt.Println("employee Name:",e.Name)
+	fmt.Println("Position:",e.Details["Position"])
 }
 
 
