@@ -1220,7 +1220,7 @@ func main() {
 	fmt.Println("Name:",p2.Name)
 	fmt.Println("Age:",p2.Age)
 }*/
-
+/*
 func main() {
 	book := struct {
 		Title string
@@ -1232,6 +1232,21 @@ func main() {
 		Price : 999.99,
 	}
 	fmt.Println(book)
+}*/
+
+type shape interface {
+	Area() float64
+}
+type rectangle struct {
+	width,height float64
+
+}
+func (r rectangle) Area () float64 {
+	return r.width * r.height
+}
+func main() {
+	var s shape = rectangle{10,5}
+	fmt.Println("Area:",s.Area())
 }
 
 
