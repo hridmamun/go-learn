@@ -1203,7 +1203,7 @@ func main() {
 																									printstudent(&s2)
 																								}
 */
-
+/*
 type person struct {
 	Name string
 	Age int
@@ -1219,6 +1219,19 @@ func main() {
 	fmt.Println(p2)
 	fmt.Println("Name:",p2.Name)
 	fmt.Println("Age:",p2.Age)
+}*/
+
+func main() {
+	book := struct {
+		Title string
+		Author string
+		Price float64
+	} {
+		Title :"Go Programming",
+		Author : "Abdullah Hridoy",
+		Price : 999.99,
+	}
+	fmt.Println(book)
 }
 
 
