@@ -1169,7 +1169,7 @@ func main() {
 																									fmt.Println("After birthday:",person)
 																								}
 																									*/
-
+/*
 																									type Student struct {
 																										Name string
 																										Grade int
@@ -1202,7 +1202,24 @@ func main() {
 																									printstudent(&s1)
 																									printstudent(&s2)
 																								}
+*/
 
+type person struct {
+	Name string
+	Age int
+}
+
+func main() {
+	p1 := person{"Hridoy",25}
+	fmt.Println(p1)
+	fmt.Println("Name:",p1.Name)
+	fmt.Println("Age:",p1.Age)
+
+	p2 := person{"Alauddin",30}
+	fmt.Println(p2)
+	fmt.Println("Name:",p2.Name)
+	fmt.Println("Age:",p2.Age)
+}
 
 
 
