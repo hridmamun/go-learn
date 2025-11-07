@@ -1270,7 +1270,7 @@ func main() {
 	fmt.Println("employee Name:",e.Name)
 	fmt.Println("Position:",e.Details["Position"])
 }*/
-
+/*
 const a = 10
 var b = 20
 func Outer() func() {
@@ -1303,6 +1303,21 @@ func main() {
 }
 func init() {
 	fmt.Print("=======Begin=======\n")
+}*/
+
+func Outer() func() {
+	x := 10
+	return func() {
+		x++
+		fmt.Println(x)
+	}
+}
+func main() {
+	closure := Outer() 
+	closure()
+	closure()
+
+	
 }
 
 
