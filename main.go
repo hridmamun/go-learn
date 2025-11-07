@@ -1304,7 +1304,7 @@ func main() {
 func init() {
 	fmt.Print("=======Begin=======\n")
 }*/
-
+/*
 func Outer() func() {
 	x := 10
 	return func() {
@@ -1318,6 +1318,23 @@ func main() {
 	closure()
 
 	
+}*/
+func createCounter() func() int {
+	counter := 0
+	return func() int {
+		counter++
+		return counter
+	}
+
+}
+
+func main() {
+	counter1 := createCounter()
+	counter2 := createCounter()
+	fmt.Println(counter1())
+	fmt.Println(counter1())
+	fmt.Println(counter2())
+	fmt.Println(counter2())
 }
 
 
