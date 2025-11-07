@@ -1319,6 +1319,7 @@ func main() {
 
 	
 }*/
+/*
 func createCounter() func() int {
 	counter := 0
 	return func() int {
@@ -1335,7 +1336,24 @@ func main() {
 	fmt.Println(counter1())
 	fmt.Println(counter2())
 	fmt.Println(counter2())
-}
+}*/
+
+func main() {
+	funcs :=[] func() {}
+
+	for i :=0; i<3;i++ {
+		funcs = append(funcs,func() {
+			fmt.Println(i)
+		})
+	}
+
+	for  _, f := range funcs {
+		f()
+	}
+	}
+	
+	
+
 
 
 
