@@ -1351,7 +1351,7 @@ func main() {
 		f()
 	}
 	}*/
-
+/*
 	func operationFactory (operator string) func(int,int) int {
 		switch operator {
 		case "add":
@@ -1378,6 +1378,24 @@ func main() {
 		fmt.Println(add(3,4))
 		fmt.Println(subtract(5,4))
 		fmt.Println(multiply(9,4))
+	}*/
+
+	func filter(data [] int,predicate func(int) bool) [] int {
+		result := [] int {}
+		for _, v :=range data {
+			if predicate(v) {
+				result = append(result,v)
+			}
+		}
+		return result
+	}
+
+	func main() {
+		nums := [] int{1,2,3,4,5}
+		even := func(n int) bool {
+			return n%2 ==0
+		}
+		fmt.Println(filter(nums,even))
 	}
 	
 	
