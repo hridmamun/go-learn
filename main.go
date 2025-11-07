@@ -1379,7 +1379,7 @@ func main() {
 		fmt.Println(subtract(5,4))
 		fmt.Println(multiply(9,4))
 	}*/
-
+/*
 	func filter(data [] int,predicate func(int) bool) [] int {
 		result := [] int {}
 		for _, v :=range data {
@@ -1397,7 +1397,24 @@ func main() {
 		}
 		fmt.Println(filter(nums,even))
 	}
-	
+	*/
+
+	func memorize() func(int) int {
+		cache := map[int] int{}
+		return func(n int) int {
+			if val,ok :=cache[n];ok {
+				return val
+			}
+			result := n*n
+			cache[n]=result
+			return result
+		}
+	}
+	func main() {
+		square := memorize()
+		fmt.Println(square(4))
+		fmt.Println(square(4))
+	}
 	
 
 
