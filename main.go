@@ -1248,7 +1248,7 @@ func main() {
 	var s shape = rectangle{10,5}
 	fmt.Println("Area:",s.Area())
 }*/
-
+/*
 type employee struct {
 	ID  int
 	Name string
@@ -1269,6 +1269,40 @@ func main() {
 
 	fmt.Println("employee Name:",e.Name)
 	fmt.Println("Position:",e.Details["Position"])
+}*/
+
+const a = 10
+var b = 20
+func Outer() func() {
+	money := 100
+	age := 25
+
+	fmt.Println("Outer function")
+	fmt.Println("Age:",age)
+
+	show := func() {
+		money += a+b
+		fmt.Println("Money:",money)
+	}
+	return show
+}
+
+func call() {
+	inc := Outer()
+	inc()
+	inc()
+	fmt.Println("===================")
+	inc1 := Outer()
+	inc1()
+	inc1()
+
+} 
+
+func main() {
+	call()
+}
+func init() {
+	fmt.Print("=======Begin=======\n")
 }
 
 
