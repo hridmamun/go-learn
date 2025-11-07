@@ -1337,7 +1337,7 @@ func main() {
 	fmt.Println(counter2())
 	fmt.Println(counter2())
 }*/
-
+/*
 func main() {
 	funcs :=[] func() {}
 
@@ -1350,6 +1350,34 @@ func main() {
 	for  _, f := range funcs {
 		f()
 	}
+	}*/
+
+	func operationFactory (operator string) func(int,int) int {
+		switch operator {
+		case "add":
+			return func(a,b int) int {
+				return a+b
+			}
+		case "subtract":
+			return func (a,b int) int {
+				return a-b
+			}
+		case "multiply":
+			return func(a,b int) int {
+				return a*b
+			}
+		}
+		return nil
+	}
+
+	func main() {
+		add := operationFactory("add")
+		subtract := operationFactory("subtract")
+		multiply := operationFactory("multiply")
+
+		fmt.Println(add(3,4))
+		fmt.Println(subtract(5,4))
+		fmt.Println(multiply(9,4))
 	}
 	
 	
